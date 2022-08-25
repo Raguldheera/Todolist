@@ -8,12 +8,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class TaskFormComponent implements OnInit {
   @Input() taskList;
   newTask: string;
-
   constructor() { }
 
   ngOnInit() {
   }
-
   addTODO(){
     this.taskList.unshift(this.newTask);
     localStorage.setItem('my_tasks',JSON.stringify(this.taskList))

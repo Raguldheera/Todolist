@@ -10,10 +10,8 @@ export class TaskListComponent implements OnInit {
   searchText: string;
 
   constructor() { }
-
   ngOnInit() {
   }
-   
   removeTask(index: number){
     this.tasks.splice(index,1)
     localStorage.setItem('my_tasks',JSON.stringify(this.tasks))

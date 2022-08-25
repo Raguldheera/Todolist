@@ -5,3 +5,10 @@ li{
     border-radius:10px ;
     align-items:center ;
 }
+.btn:focus{
+    box-shadow: none;
+}
+.form-control:focus{
+    box-shadow:none;
+ }
+ 

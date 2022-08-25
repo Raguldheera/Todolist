@@ -1,4 +1,6 @@
 <form>
-    <input class="form-control" #Input type="text" id="newTask" name="newTask" placeholder="Add a task" [(ngModel)]="newTask">
-   <button class="btn btn-outline-success my-3" [disabled]="Input.value == ''" type="submit" (click)="addTODO()">Add Task</button>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" #Input type="text" id="newTask" name="newTask" placeholder="Add a task" [(ngModel)]="newTask" >
+        <button class="btn btn-outline-primary" [disabled]="Input.value == ''" type="submit" id="button-addon2" (click)="addTODO()"><i class="fa-solid fa-circle-plus"></i></button>
+      </div>
 </form>
